@@ -1,0 +1,278 @@
+<!-- This website template was created by: Stuart Daniells - C0829441  -->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Title, icon, description and keywords -->
+  <title>Unbeaten Inc.</title>
+  <link rel="shortcut icon" href="../res/images/favicon.ico">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../res/css/bootstrap.min.css">
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+  <!-- google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Lemonada&family=Lobster&display=swap" rel="stylesheet">
+
+  <!-- Main styles -->
+  <link rel="stylesheet" href="../res/css/main.css">
+  <link rel="stylesheet" href="../res/css/style.css">
+  <link rel="stylesheet" href="../res/css/homepage_style.css">
+  <link rel="stylesheet" href="../res/css/products_carousel.css">
+
+
+  <!-- Color skin - Red -->
+  <link rel="stylesheet" href="../res/css/color_red.css">
+
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- jquery script -->
+  <script src="../scripts/blenders.js"></script>
+  <script src="../scripts/products_json.js"></script>
+  
+</head>
+
+<body id="page-top">
+  <!-- header start -->
+  <header id="header">
+    <nav>
+       <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about_us.html">About</a></li>
+          <li><a href="../index.html#team">Team</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+          <!-- dropdown for Special, On sale - JSON product -->
+          <div class="dropdown" style="border-style: outset; border-color: #fff220;">
+            <button class="dropbtn">Products</button>
+            <div class="dropdown-content">
+               <a href="specials.html">Specials</a></li>
+              <a href="products_from_json.html">On Sale</a>
+              <a href="flickr_search.html">Search Flickr</a>
+            </div>
+         </div>
+
+          <!-- Original Database reports for the Views created in SQL -->
+          <div class="dropdown" style="border-style: outset; border-color: #fff220;">
+             <button class="dropbtn">REPORTS</button>
+             <div class="dropdown-content">
+               <a href="http://12.42.204.30:7447/html/report1.html" target="_blank">Products</a>
+               <a href="http://12.42.204.30:7447/html/report2.html" target="_blank">Invoices</a>
+               <a href="http://12.42.204.30:7447/html/report3.html" target="_blank">Customers</a>
+               <a href="http://12.42.204.30:7447/html/report4.html" target="_blank">Staff</a>
+             </div>
+          </div>
+          <!-- End of Database reports -->
+       </ul>
+    </nav>
+
+    <!-- on smaller devices menu bars -->
+    <div class="fa-solid fa-bars"></div>
+
+    <!-- logo -->
+    <a href="#" class="logo"><img src="../res/images/logos/logo.png" alt="logo of brand"></a>
+
+  </header>
+  <!-- header end -->
+
+<!-- products title start -->
+<section id="" class="bg-white">
+   <div class="container">
+      <div class="row no-padding-rl no-padding-top padding-4">
+      <div class="col-md-12">
+         <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">
+            30% OFF! on the below products:
+         </h2>
+         <p>(while stocks last) - Enable CORS to view offers</p>
+         <span class="bg-base-color xs-margin-6 xs-no-margin-rl margin-3 no-margin-rl no-margin-bottom separator-line-extra-thick-long"></span>
+      </div>
+      <!-- //.col-md-10 -->
+      </div>
+      <!-- //.row -->
+
+      <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+         <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">
+            Our Promise!
+         </h3>
+         <p class="margin-5 no-margin-rl text-gray-dark-2">
+            Each category, brand and feature is selected with your needs as well as requirements in mind; 
+            based on the extensive research applied over the years. So you can rest assured that you get 
+            what's potrayed in any of our advertisements...
+         </p>
+      </div>  
+   </div>
+
+</section>
+<!-- products title end -->
+
+
+<!-- json products section start -->
+<main>
+
+   <!-- slider -->
+   <div class="slider">
+      <input type="radio" name="testimonial" id="t-1">
+      <input type="radio" name="testimonial" id="t-2">
+      <input type="radio" name="testimonial" id="t-3" checked>
+      <input type="radio" name="testimonial" id="t-4">
+      <input type="radio" name="testimonial" id="t-5">
+
+      <div id="carousel_json" class="testimonials">
+         <!-- JSON DATA GOES HERE -->
+      </div>
+      <div class="dots">
+         <label for="t-1"></label>
+         <label for="t-2"></label>
+         <label for="t-3"></label>
+         <label for="t-4"></label>
+         <label for="t-5"></label>
+      </div>
+   </div>
+</main>
+
+  <!-- section for the table -->
+  <section style="padding-top: 5em">
+
+   <div id="products_json" class= "desktop pad mobile">
+
+     <table> <!-- Start Table -->
+         <caption>Our various blenders:</caption>
+
+         <tr><!-- Row header -->
+           <th>Sl No.</th>
+           <th>Blender Brand Names</th>
+           <th>Stock Number</th>
+           <th>Quantity Available (currently)</th>
+           <th>Size</th>
+           <th>Colour</th>
+         </tr>
+
+         <!-- JSON DATA GOES HERE -->
+
+     </table> <!-- End Table-->
+   </div>
+ </section>
+
+<!-- json products section end -->
+
+  <!-- Section - Event banner start -->
+  <section id="event-banner" class="bg-white pull-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <i class="fa-solid fa-clock display-block text-base-color title-extra-large-2"></i>
+          <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">
+            Date &amp; Time
+          </span>
+          <p class="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2">
+            Working hours<br>
+            10 AM to 5 PM, all week
+          </p>
+        </div>
+        <!-- //.col-sm-4 -->
+
+        <div class="col-sm-4 xs-margin-8 xs-no-margin-bottom xs-no-margin-rl text-center">
+          <i class="fa-solid fa-location-dot display-block text-base-color title-extra-large-2"></i>
+          <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">
+            Venue
+          </span>
+          <p class="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2">
+            All locations,<br>
+            As in the Contact Us page
+          </p>
+        </div>
+        <!-- //.col-sm-4 -->
+
+        <div id="banner-registration" class="col-sm-4 xs-margin-8 xs-no-margin-bottom xs-no-margin-rl text-center">
+          <a href="./contact.html" class="btn btn-outline-base-color sm-btn-medium btn-large no-margin-rl">
+            <span>Contact<br>Us</span>
+          </a>
+        </div>
+        <!-- //.col-sm-4 -->
+      </div>
+      <!-- //.row -->
+    </div>
+   </section>
+   <!-- //Section - Event banner end -->
+
+  <!-- Section - Parallax banner start -->
+  <section id="home-bg-parallax" class="height-50 no-padding overflow-hidden width-100">
+    <!-- BG Parallax -->
+    <div class="bg-parallax bg-overlay-black-5 width-100"></div>
+
+    <div class="display-table height-100 position-absolute position-top position-left width-100">
+      <div class="display-table-cell vertical-align-middle">
+        <div class="container">
+          <div class="row">
+            <h5 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase text-white-3 xs-title-small sm-title-medium title-extra-large text-center">
+              <span class="text-base-color title-underline-white">Unbeaten</span> - Not just our name but our motto!
+            </h5>
+          </div>
+          <!-- //.row -->
+        </div>
+        <!-- //.container -->
+      </div>
+      <!-- //.display-table-cell -->
+    </div>
+    <!-- //.display-table -->
+   </section>
+   <!-- //Section - Parallax banner end -->
+
+   <!-- footer starts  -->
+
+   <footer id="footer" class="container-fluid">
+
+   <div class="row align-items-center">
+      <div class="col-md-4 brand">
+         <a href="#" class="logo">
+            <img src="../res/images/logos/logo.png" alt="logo">
+            <p>Not just our name but our motto!</p>
+         </a>
+         
+         <div class="icons">
+            <a href="#" class="fab fa-facebook-square"></a>
+            <a href="#" class="fab fa-twitter-square"></a>
+            <a href="#" class="fab fa-instagram-square"></a>
+            <a href="#" class="fab fa-pinterest-square"></a>
+         </div>
+      </div>
+      <div class="col-md-4 footer-links">
+         <h3>links:</h3>
+         <a href="../index.html">home</a>
+            <a href="specials.html">special</a>
+            <a href="about_us.html">about</a>
+            <a href="../index.html#team">team</a>
+            <a href="contact.html">contact</a>
+      </div>
+      
+      <div class="col-md-4 text-center text-md-left letter">
+         <h2>newsletter:</h2>
+         <input type="text"><br>
+         <input type="submit" value="subscribe">
+      </div>
+   </div>
+   <hr style="background-color: #fff;">
+   
+   <!-- Footer copyrights -->
+   <h1>&copy; Copyright 2099. All Rights Reserved.
+      &nbsp;|&nbsp; <u><a href="mailto:support@unbeaten.com"> Request information. </a></u>
+      &nbsp;|&nbsp; <span> Stuart Daniells &nbsp; - &nbsp; C0829441</span></p>
+   </h1>
+   
+   </footer>
+
+   <!-- footer ends  -->
+
+</body>
+
+</html>

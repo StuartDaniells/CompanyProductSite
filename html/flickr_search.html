@@ -1,0 +1,108 @@
+<!-- This website template was created by: Stuart Daniells - C0829441  -->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Unbeaten Inc.</title>
+
+  <!-- Title, icon, description and keywords -->
+  <link rel="shortcut icon" href="../res/images/favicon.ico">
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+  <!-- google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Lemonada&family=Lobster&display=swap" rel="stylesheet">
+
+
+  <!-- Main styles -->
+  <link rel="stylesheet" href="../res/css/homepage_style.css">
+  <link rel="stylesheet" href="../res/css/flickr_search.css">
+
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <!-- external jquery script -->
+  <script src="../scripts/blenders.js"></script>
+  <script src="../scripts/flickr.js"></script>
+  
+</head>
+
+<body id="page-top">
+  <!-- header start -->
+  <header id="header">
+    <nav>
+       <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about_us.html">About</a></li>
+          <li><a href="../index.html#team">Team</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+          <!-- dropdown for Special, On sale - JSON product -->
+          <div class="dropdown" style="border-style: outset; border-color: #fff220;">
+            <button class="dropbtn">Products</button>
+            <div class="dropdown-content">
+              <a href="specials.html">Specials</a></li>
+              <a href="products_from_json.html">On Sale</a>
+              <a href="flickr_search.html">Search Flickr</a>
+            </div>
+          </div>
+
+          <!-- Original Database reports for the Views created in SQL -->
+          <div class="dropdown" style="border-style: outset; border-color: #fff220;">
+             <button class="dropbtn">REPORTS</button>
+             <div class="dropdown-content">
+               <a href="http://12.42.204.30:7447/html/report1.html" target="_blank">Products</a>
+               <a href="http://12.42.204.30:7447/html/report2.html" target="_blank">Invoices</a>
+               <a href="http://12.42.204.30:7447/html/report3.html" target="_blank">Customers</a>
+               <a href="http://12.42.204.30:7447/html/report4.html" target="_blank">Staff</a>
+             </div>
+          </div>
+          <!-- End of Database reports -->
+       </ul>
+    </nav>
+
+    <!-- on smaller devices menu bars -->
+    <div class="fa-solid fa-bars"></div>
+
+    <!-- logo -->
+    <a href="#" class="logo"><img src="../res/images/logos/logo.png" alt="logo of brand"></a>
+
+  </header>
+  <!-- header end -->
+
+  <!-- section for flickr search starts-->
+  <section>
+    <div class="container">
+      <h1 class="heading">Search by tag (Flickr)</h1>
+      <div class="searchInputWrapper">
+        <input id="searchInput" class="searchInput" type="text" placeholder='focus here to search'>
+        
+        <button id="btnSearch" class="searchInputIcon fa fa-search" style="border-radius: 40%; padding: 5px;"></button>
+        </input>
+      </div>
+    </div>
+    <div id="flickr_display"></div>
+  </section>
+  
+
+  <!-- section for flickr search ends-->
+  
+  <!-- Footer copyrights -->
+  <h1 style="color: white;">&copy; Copyright 2099. All Rights Reserved.
+    &nbsp;|&nbsp; <u><a href="mailto:support@unbeaten.com"> Request information. </a></u>
+    &nbsp;|&nbsp; <span> Stuart Daniells &nbsp; - &nbsp; C0829441</span></p>
+  </h1>
+  
+</footer>
+
+<!-- footer ends  -->
+
+</body>
+
+</html>

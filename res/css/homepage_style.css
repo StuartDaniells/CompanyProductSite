@@ -1,0 +1,837 @@
+/* Style sheet was created by: Stuart Daniells - C0829441 */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Exo 2', 'sans-serif';
+   text-transform: capitalize;
+   transition: all .2s linear;
+}
+
+html{
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+
+body{
+   overflow-x: hidden;
+}
+
+/* header (id - header) block styles */
+#header{
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2rem 4rem;
+   z-index: 1000;
+   background-color: #333;
+}
+
+/* re-defining the menu bar style */
+#header .fa-bars{
+   font-size: 4rem;
+   z-index: 10000;
+   cursor: pointer;
+   display: none;
+}
+
+#header .logo img{
+   height: 5rem;
+}
+
+#header nav ul{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   list-style: none;
+}
+
+#header nav ul li{
+   margin-right: 4rem;
+}
+
+#header nav ul li a{
+   color: #fff;
+   font-size: 2.1rem;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+#header nav ul li a:hover {
+   color: #fff200;
+   text-decoration: none;
+}
+
+.header-active {
+   background: #333;
+   height: 6rem;
+   box-shadow: 0.2rem 0 0.5rem #000;
+}
+.header-active nav ul {
+   margin: 0;
+}
+
+/* Dropdown Reports button for SQL Views tables - box style */
+.dropbtn {
+   background-color: red;
+   color: white;
+   padding: 18px;
+   font-size: 15px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown-content a:hover {
+   background-color: #f1f1f1
+ }
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+ 
+ .dropdown:hover .dropbtn {
+   background-color: #3e8e41;
+ }
+ /* End of Dropdown Report button box style */
+
+/* section block (id - home) styles */
+#home {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+   position: relative;
+}
+
+#home .content h1 {
+   font-size: 8rem;
+   font-family: 'Patua One', sans-serif;
+   font-weight: bolder;
+   text-shadow: 0.1rem 0.1rem 0.3rem #333;
+   color: red;
+}
+
+#home .content h2 {
+   font-size: 6rem;
+   font-family: 'Patua One', sans-serif;
+   font-weight: bolder;
+   text-shadow: 0.1rem 0.1rem 0.3rem #333;
+   color: #fff;
+   margin: 1rem 0;
+}
+
+#home .content button {
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   color: #333;
+   font-size: 1.6rem;
+   font-weight: bold;
+   text-transform: capitalize;
+   letter-spacing: 0.2rem;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   height: 4rem;
+   width: 14rem;
+   background: #fff;
+}
+
+#home .content button::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #fff200;
+   height: 100%;
+   width: 0%;
+   transition: 0.5s;
+   z-index: -1;
+}
+#home .content button:hover::before {
+   width: 100%;
+}
+
+/* video */
+#home .video-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100vh;
+   width: 100%;
+   z-index: -1;
+}
+
+#home .video-container .vid {
+   position: absolute;
+   height: 100vh;
+   width: 100%;
+   object-fit: cover;
+   display: none;
+}
+
+#home .video-container .vid1 {
+   display: block;
+}
+
+/* slides control - dots - for homepage video */
+#home .controls {
+   position: absolute;
+   bottom: 14%;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+}
+
+#home .controls .dots {
+   height: 2rem;
+   width: 2rem;
+   cursor: pointer;
+   background: #fff200;
+   margin: 0 1rem;
+}
+
+#home .controls .dots:hover{
+   background: #fff;
+}
+
+/* about us section starts*/
+#about{
+   font-size: 4rem;
+   color: #000;
+   padding-top: 7rem;
+   background-color: rgb(218, 215, 215);
+}
+#about .heading h1 {
+   font-size: 5rem;
+   font-weight: bold;
+}
+#about .heading h1 span {
+   color: red;
+}
+#about .content {
+   left: 5px;
+   padding: 0 3rem;
+   margin: 5rem auto;
+}
+#about .content p {
+   font-size: 2rem;
+}
+#about .content button {
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   color: #333;
+   font-size: 1.6rem;
+   font-weight: bold;
+   text-transform: capitalize;
+   letter-spacing: 0.2rem;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   height: 4rem;
+   width: 14rem;
+   background: #333;
+   color: #fff;
+}
+#about .content button::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #fff200;
+   height: 100%;
+   width: 0%;
+   transition: 0.2s;
+   z-index: -1;
+}
+#about .content button:hover {
+   color: #333;
+}
+#about .content button:hover::before {
+   width: 100%;
+}
+#about .image img {
+   width: 45vw;
+   padding: 0 0 1.5rem;
+}
+/* about us section ends*/
+
+/* special section starts */
+#special{
+   background: #000;
+   min-height: 100vh;
+}
+#special .heading h1 {
+   font-size: 6em;
+   color: #000;
+   padding-top: 7rem;
+   margin-bottom: 2rem;
+   color: #fff;
+}
+#special .heading h1 span {
+   color: #fff200;
+}
+#special .heading p {
+   color: #ccc;
+   font-size: 2rem;
+}
+
+/* special cards carousel start */
+#special .card-container {
+   display: flex;
+   overflow: hidden;
+}
+
+#special .card-container .image_list{
+   display: flex;
+   justify-content: space-evenly;
+   position: relative;	
+	left: 0px;
+}
+
+.button_arrows {
+   display: inline-block;
+   padding: 1rem 2rem;
+   font-size: 2.5rem;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+   color: #fff;
+   background-color: #f00;
+   border: none;
+   border-radius: 50%;
+   box-shadow: 0 6px rgb(18, 8, 8);
+ }
+ 
+ .button_arrows:hover {background-color: #fff200}
+ 
+ .button_arrows:active {
+   background-color: #c9ce2a;
+   box-shadow: 0 3px #666;
+   transform: translateY(4px);
+ }
+
+ .button_panel{
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   bottom: 25rem;
+}
+/* special cards carousel end */
+
+#special .card-container .card {
+   height: 45rem;
+   width: 30rem;
+   background: #fff;
+   padding: 1rem;
+   margin: 2rem;
+   text-align: center;
+}
+#special .card-container .card img {
+   height: 78%;
+   width: 100%;
+   object-fit: cover;
+}
+#special .card-container .card p {
+   font-size: 1.4rem;
+   margin: 2rem 0;
+}
+#special .card-container .card button {
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   color: #333;
+   font-size: 1.6rem;
+   font-weight: bold;
+   text-transform: capitalize;
+   letter-spacing: 0.2rem;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   height: 3.5rem;
+   width: 14rem;
+   background: #333;
+   color: #fff;
+}
+#special .card-container .card button::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #fff200;
+   height: 100%;
+   width: 0%;
+   transition: 0.2s;
+   z-index: -1;
+}
+#special .card-container .card button:hover {
+   color: #333;
+}
+#special .card-container .card button:hover::before {
+   width: 100%;
+}
+#special .card-container .card:hover {
+   transform: scale(0.9);
+}
+
+/* special section ends */
+
+/* team section starts*/
+#team {
+   min-height: 100vh;
+   width: 100vw;
+}
+#team .heading h1 {
+   font-size: 4rem;
+   color: #000;
+   padding-top: 7rem;
+   margin-bottom: 2rem;
+}
+#team .heading h1 span {
+   color: red;
+}
+#team .box-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin: 1rem auto;
+   width: 90%;
+}
+#team .box-container .box {
+   height: 30rem;
+   width: 23rem;
+   border-radius: 0.5rem;
+   margin: 2rem;
+   cursor: pointer;
+   overflow: hidden;
+   position: relative;
+   box-shadow: 0 0 0.5rem #333;
+}
+#team .box-container .box img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+#team .box-container .box .info {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: rgba(51, 51, 51, 0.6);
+   text-align: center;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column;
+   color: #fff;
+   transform: scale(0);
+}
+#team .box-container .box .info h3 {
+   font-size: 3rem;
+}
+#team .box-container .box .info p {
+   font-size: 1.3rem;
+   border-bottom: 0.2rem solid #fff200;
+   border-top: 0.2rem solid #fff200;
+   margin: 1rem 2rem;
+}
+#team .box-container .box:hover .info {
+   transform: scale(1);
+}
+/* team section starts*/
+
+/* contact us section starts*/
+#contact {
+   min-height: 100vh;
+   width: 100vw;
+   background: url(../images/bg-home-1.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+#contact .heading h1 {
+   font-size: 4rem;
+   color: #000;
+   padding-top: 7rem;
+   margin-bottom: 2rem;
+}
+#contact .heading h1 span {
+   color: #fff200;
+}
+#contact form {
+   background: #fff;
+   padding-top: 2rem;
+   margin: 1rem 2rem;
+   border-radius: 1rem;
+   box-shadow: 0 0 2rem #333;
+}
+#contact form .inputBox {
+   position: relative;
+   text-align: center;
+}
+#contact form .inputBox input {
+   outline: none;
+   border: 0.2rem solid #333;
+   border-radius: 0.2rem;
+   margin: 2rem 0;
+   padding: 0 1rem;
+   background: none;
+   height: 4rem;
+   width: 90%;
+   font-size: 2rem;
+}
+#contact form .inputBox input:focus ~ h3 {
+   font-size: 1.6rem;
+   left: 6%;
+   top: -0.5rem;
+   color: #f30;
+}
+#contact form .inputBox input:valid ~ h3 {
+   font-size: 1.6rem;
+   left: 6%;
+   top: -0.5rem;
+   color: #f30;
+}
+#contact form .inputBox .emailType ~ h3 {
+   font-size: 1.6rem;
+   left: 6%;
+   top: -0.5rem;
+   color: #f30;
+}
+#contact form .inputBox textarea {
+   outline: none;
+   border: 0.2rem solid #333;
+   border-radius: 0.2rem;
+   margin: 2rem 0;
+   padding: 0 1rem;
+   background: none;
+   height: 4rem;
+   width: 90%;
+   font-size: 2rem;
+   padding: 1rem;
+   resize: none;
+   height: 20rem;
+}
+#contact form .inputBox textarea:focus ~ h3 {
+   font-size: 1.6rem;
+   left: 6%;
+   top: -0.5rem;
+   color: #f30;
+}
+#contact form .inputBox textarea:valid ~ h3 {
+   font-size: 1.6rem;
+   left: 6%;
+   top: -0.5rem;
+   color: #f30;
+}
+#contact form .inputBox h3 {
+   position: absolute;
+   top: 3rem;
+   left: 7%;
+}
+#contact form input[type="submit"] {
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   color: #333;
+   font-size: 1.6rem;
+   font-weight: bold;
+   text-transform: capitalize;
+   letter-spacing: 0.2rem;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   height: 4rem;
+   width: 12rem;
+   margin-bottom: 2rem;
+   margin-left: 4%;
+   background: #333;
+   color: #fff;
+}
+#contact form input[type="submit"]::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #fff200;
+   height: 100%;
+   width: 0%;
+   transition: 0.2s;
+   z-index: -1;
+}
+#contact form input[type="submit"]:hover {
+   color: #333;
+   background: #fff200;
+}
+#contact form input[type="submit"]:hover::before {
+   width: 100%;
+}
+/* contact us section ends*/
+
+/* footer section ends*/
+#footer {
+   background: #333;
+}
+#footer h1 {
+   font-size: 1.5rem;
+   margin: 0;
+   padding: 0.2rem;
+   text-align: center;
+   color: #fff;
+}
+#footer h1 span {
+   color: #fff200;
+}
+#footer .brand {
+   text-align: center;
+   margin-top: 2rem;
+}
+#footer .brand a p {
+   font-size: medium;
+   color: #fff200;
+}
+#footer .brand .logo img {
+   height: 12rem;
+}
+#footer .brand .icons a {
+   font-size: 2rem;
+   margin: 2rem 1rem;
+   color: #fff;
+}
+#footer .brand .icons a:hover {
+   color: #fff200;
+}
+#footer .footer-links {
+   text-align: center;
+   display: flex;
+   flex-flow: column;
+   margin: 1rem 0;
+}
+#footer .footer-links h3 {
+   font-size: 2.2rem;
+   color: #fff200;
+}
+#footer .footer-links a {
+   color: #fff;
+   font-size: 1.7rem;
+}
+#footer .letter h2 {
+   font-size: 2rem;
+   margin: 2rem 0;
+   color: #fff;
+}
+#footer .letter input[type="text"] {
+   border: 0.2rem solid #fff;
+   outline: none;
+   background: none;
+   height: 4rem;
+   width: 22rem;
+   padding: 0 1rem;
+   font-size: 1.3rem;
+   color: #fff;
+}
+#footer .letter input[type="submit"] {
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   color: #333;
+   font-size: 1.6rem;
+   font-weight: bold;
+   text-transform: capitalize;
+   letter-spacing: 0.2rem;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   height: 4rem;
+   width: 12rem;
+   margin: 1rem 0;
+}
+#footer .letter input[type="submit"]::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #fff200;
+   height: 100%;
+   width: 0%;
+   transition: 0.2s;
+   z-index: -1;
+}
+#footer .letter input[type="submit"]:hover {
+   color: #333;
+   background: #fff200;
+}
+#footer .letter input[type="submit"]:hover::before {
+   width: 100%;
+}
+/* footer section ends*/
+
+/* overridding the default font-awesome icon style */
+.fa-times {
+   transform: skew(-180deg) rotate(180deg);
+}
+
+/* to toggle, based on user click with jquey*/
+.hideReveal{
+   display: none;
+}
+
+/* custom styling for show-more hide & reveal on homepage*/
+.aboutReveal{
+   display: inline-block;
+   font-size: 14px!important;
+   margin: 0!important;
+   border-bottom: 2px solid transparent;
+   border-color: #4a90e2;
+}
+.aboutReveal:hover{
+   color: #f1f1f1;
+   background-color: rgb(159, 146, 146);
+   text-decoration: none;
+}
+
+/* overridding default form error message style*/
+form input{
+   position:relative; 
+}
+form label{
+   color: red;
+   position:relative; 
+   bottom: 2rem;
+}
+
+/* media queries - for tablet devices*/
+@media (max-width: 947px){
+   html {
+      font-size: 60%;
+   }
+
+   #header .fa-bars {
+      display: block;
+      color: #fff200;
+   }
+
+   #header nav {
+      position: fixed;
+      top: 0;
+      left: -120%;
+      height: 100vh;
+      width: 35rem;
+      background: #000;
+   }
+
+   #header nav ul {
+      flex-flow: column;
+      justify-content: center;
+      height: 100%;
+   }
+
+   #header nav ul li {
+      margin: 2rem 0;
+   }
+
+   #header nav ul li a {
+      font-size: 3.5rem;
+      border-radius: 5rem;
+   }
+
+   #header nav ul li a:hover {
+      padding: 0.5rem 7.5rem;
+      color: #333;
+      background: #fff200;
+   }
+
+   #header .nav-toggle {
+      left: 0%;
+   }
+
+   #about .image {
+      text-align: center;
+   }
+}
+
+/* media queries - for mobile devices*/
+@media (max-width: 768px){
+   html {
+      font-size: 50%;
+   }
+
+   #header .fa-bars {
+      display: block;
+   }
+
+   #header nav {
+      position: fixed;
+      top: 0;
+      left: -120%;
+      height: 100vh;
+      width: 35rem;
+      background: #000;
+   }
+
+   #header nav ul {
+      flex-flow: column;
+      justify-content: center;
+      height: 100%;
+   }
+
+   #header nav ul li {
+      margin: 2rem 0;
+   }
+
+   #header nav ul li a {
+      font-size: 3.5rem;
+      border-radius: 5rem;
+   }
+
+   #header nav ul li a:hover {
+      padding: 0.5rem 7.5rem;
+      color: #333;
+      background: #fff200;
+   }
+
+   #header .nav-toggle {
+      left: 0%;
+   }
+
+   #about .image {
+      text-align: center;
+   }
+   #about .image img {
+      width: 65vw;
+   }
+}
+

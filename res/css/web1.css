@@ -1,0 +1,37 @@
+/* Style sheet created by: Stuart Daniells - C0829441 */
+
+body {
+  margin-top: 40px;
+  background-color: #E0E0E0;
+}
+
+#container1 {
+	width: 90%;
+	/* margin-top: 12em; */
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-color: #A8212D;
+   border-width: 0px 0px 16px 0px;
+}
+
+table, th, tr, td {
+border: 1px solid #A8212D;
+border-collapse: collapse;
+}
+
+table th {
+background: #E8E8E8;
+color: #A8212D;
+}
+
+th, td {
+padding: 15px;
+text-align: left;
+}
+
+tr:nth-child(even) {background: #f2f2f2;}
+
+tr:nth-child(odd) {background: red;}
+
+

@@ -1,0 +1,655 @@
+/* Style sheet was created by: Stuart Daniells - C0829441 */
+
+/*
+  Section - Home
+  --------------
+*/
+
+/* Home BG Parallax */
+
+#home-bg-parallax > .bg-parallax {
+  background: url("../images/bg-parallax.jpg");
+}
+
+/*
+  Intro
+  -----
+*/
+#intro .features-box:nth-child(1) .bg-cover {
+  background-image: url("../images/intro-1.jpg");
+}
+#intro .features-box:nth-child(2) .bg-cover {
+  background-image: url("../images/intro-2.jpg");
+}
+#intro .features-box:nth-child(3) .bg-cover {
+  background-image: url("../images/intro-3.jpg");
+}
+
+
+
+/*
+  Section - Team
+  --------------
+*/
+
+.member-box {
+  margin-bottom: 24px;
+}
+
+
+
+/*
+  Section - Speakers
+  ------------------
+*/
+
+.speaker-box {
+  margin-bottom: 24px;
+}
+
+/*
+  Section - Venue
+  ---------------
+*/
+
+#venue {
+  background-image: url("../images/bg-venue.jpg");
+  background-position: center bottom !important;
+}
+
+
+/*
+  Section - Schedule
+  ------------------
+*/
+
+#schedule .nav-tabs > li.active > a,
+#schedule .nav-tabs > li.active > a:hover,
+#schedule .nav-tabs > li.active > a:focus {
+  background-color: #626262;
+  color: #ffffff;
+}
+#schedule .nav-tabs > li > a {
+  color: #272727;
+}
+#schedule .td-session-number {
+  width: 110px;
+}
+
+
+/* Carousel Schedule */
+
+.carousel-schedule .carousel-cell {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .carousel-schedule .carousel-cell {
+    width: 50%;
+  }
+}
+
+
+/* Timeline */
+
+.flickity-enabled.is-draggable .flickity-viewport,
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: url("../images/icons/left-right-dark.png"), move;
+  cursor: url("../images/icons/left-right-dark.png"), -webkit-grab;
+  cursor: url("../images/icons/left-right-dark.png"), grab;
+}
+.timeline ul {
+  margin-left: 20px;
+  padding: 15px 0 20px;
+}
+.timeline ul:before {
+  background-color: #dfdfdf;
+  border-radius: 50%;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 8px;
+  left: 0;
+  margin-left: -4px;
+  position: absolute;
+  width: 8px;
+}
+.timeline-item {
+  padding: 13px 0 13px 33px;
+}
+.timeline-item:before {
+  background-color: #ffffff;
+  border: 1px solid #989898;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 12px;
+  left: 0;
+  margin-left: -6px;
+  margin-top: -6px;
+  position: absolute;
+  top: 50%;
+  width: 12px;
+}
+.timeline-item.highlight:before {
+  background-color: #989898;
+  border: 1px solid #989898;
+}
+.timeline-content {
+  -webkit-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
+  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
+  padding: 16px;
+}
+
+
+/*
+  Milestones
+  ----------
+*/
+
+#milestones {
+  background-image: url("../images/bg-milestones.jpg");
+}
+
+
+/*
+  Section - FAQ
+  -------------
+*/
+
+/* Accordions */
+
+.panel-group .panel {
+  border: 1px solid #dfdfdf;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 17px;
+}
+.panel-group .panel:last-child {
+  margin-bottom: 0;
+}
+.panel-group .panel.active .panel-heading {
+  background-color: #989898;
+}
+.panel-group .panel.active .panel-heading .panel-title a {
+  color: #ffffff;
+}
+.panel-group .panel.active .panel-heading .panel-title a:before {
+  color: #ffffff;
+}
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border-top: 1px solid #dfdfdf;
+}
+.panel-heading {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+.panel-title a {
+  color: #272727;
+  display: block;
+  padding: 14px 18px 14px 38px;
+  position: relative;
+}
+.panel-title a:before {
+  color: #989898;
+  content: '\f107';
+  display: block;
+  font-family: "FontAwesome", sans-serif;
+  font-size: 14px;
+  left: 0;
+  padding: 14px 18px;
+  position: absolute;
+  top: 0;
+}
+.panel-title a.collapsed:before {
+  content: '\f105';
+}
+.panel-title a span {
+  margin-right: 4px;
+}
+.panel-body {
+  padding: 18px 20px 8px;
+}
+.panel-body p {
+  max-width: 600px;
+}
+
+
+/* Nav Stacked */
+
+.nav.nav-pills.nav-stacked > li:first-child > a {
+  border-top-right-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+}
+.nav.nav-pills.nav-stacked > li:last-child > a {
+  border-bottom-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+.nav.nav-pills.nav-stacked > li > a {
+  color: #272727;
+  padding: 14px 18px;
+}
+
+
+
+/*
+  Section - Ticket
+*/
+
+/* Testimonial */
+
+.testimonial {
+  max-width: 400px;
+}
+.testimonial-avatar {
+  margin-top: 25px;
+}
+.testimonial-avatar img {
+  left: 0;
+  max-height: 75px;
+  position: absolute;
+  top: 0;
+}
+.testimonial-avatar-label {
+  height: 75px;
+  padding-left: 95px;
+}
+
+
+/* Pricing */
+
+.pricing.box-shadow-yes {
+  -webkit-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.pricing.box-shadow-yes:hover {
+  -webkit-box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.pricing-dollar {
+  bottom: 28px;
+}
+.pricing ul > li {
+  position: relative;
+  margin-top: 10px;
+}
+.pricing ul > li.check-mark {
+  padding-left: 32px;
+}
+.pricing ul > li.check-mark:before {
+  background-color: #989898;
+  border-radius: 50%;
+  color: #ffffff;
+  content: '\2713';
+  display: block;
+  font-size: 11px;
+  left: 0;
+  line-height: 20px;
+  height: 18px;
+  position: absolute;
+  text-align: center;
+  top: 1px;
+  width: 18px;
+}
+.pricing ul > li:first-child {
+  margin-top: 0;
+}
+
+
+
+/*
+  Section - Register
+  ------------------
+*/
+
+#register {
+  background-image: url("../images/bg-register.jpg");
+}
+#register .form-wrapper {
+  background: rgba(0, 0, 0, 0.8);
+}
+#register textarea {
+  height: 120px;
+}
+
+
+
+/*
+  Section - Contact
+  -----------------
+*/
+
+#form-contact textarea {
+  height: 120px;
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  #form-contact button {
+    margin-top: 20px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .contact-address {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid #dfdfdf;
+  }
+}
+
+
+/* Google map */
+
+.map {
+  position: relative;
+  padding-bottom: 100%;    /* aspect ratio 1:1 */
+  height: 0;
+  overflow: hidden;
+}
+@media (min-width:420px) {
+  .map {
+    padding-bottom: 75%;    /* aspect ratio 3:4 */
+  }
+}
+@media (min-width:540px) {
+  .map {
+    padding-bottom: 60%;    /* aspect ratio 3:5 */
+  }
+}
+@media (min-width:800px) {
+  .map {
+    padding-bottom: 75%;    /* aspect ratio 3:4 */
+  }
+}
+.map iframe {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* Forms */
+
+/* .form {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  border: 0;
+}
+.form iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+/* height */
+/* #volunteer-form {
+  padding-bottom: 3000px
+} */
+
+ /* height */
+/* #nominate-speaker-form {
+  padding-bottom: 1950px;
+} */
+
+
+/*
+  Event bottom banner
+  -------------------
+*/
+#event-banner .row {
+  display: flex;
+  flex-direction: column;
+}
+#event-banner .row #banner-registration {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #event-banner .row {
+    flex-direction: row;
+  }
+  #event-banner .row #banner-registration {
+    margin: auto;
+  }
+}
+
+/*
+  Responsive images
+  -----------------
+*/
+
+.img-wrapper {
+  position: relative;
+  padding-bottom: 133.33%;    /* 4:3 aspect ratio */
+  overflow: hidden;
+  width: 100%;
+}
+.img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: auto;
+}
+
+
+
+/*
+  Features box
+  ------------
+*/
+
+@media (min-width: 768px) {
+  .row .features-box {
+    margin-bottom: 15px;
+  }
+  .row .features-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Overflow layout for tablets adn mobile devices - product listings*/
+@media (max-width: 1360px) {
+  #overflow {
+    width: auto;
+    height: 330px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+
+/* Button class for see more products. At the end of each product list*/
+.see_more {
+  font-size: 0.7em;
+  background-color: red; 
+  color: white; 
+  margin-left: 45vw;
+  border: 2px solid #f44336;
+  border-radius: 5px;
+}
+
+.see_more:hover {
+  transition: 0.7s;
+  background-color: green; 
+  border-radius: 15px;
+}
+
+/* Dropdown Reports button for SQL Views tables - box style */
+.dropbtn {
+  background-color: red;
+  color: white;
+  padding: 30px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* End of Dropdown Report button box style */
+
+/* Style displays the mobile class, border radius, background colour, etc. for Tables */
+.mobile {
+	display: block;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	margin-top: 0.5em;
+	padding: 1em;
+	border-radius: 2em 0 2em 0;
+	background-color: #FFFFFF;
+	opacity: 0.85;
+}
+
+/* Style hides the desktop class for the Tables */
+.desktop {
+	display: none;
+}
+
+/* Style hides the tablet class */
+.table {
+	display: none;
+}
+
+/* Media query for tablet viewport targets screen size with a minimum width of 660px. */
+
+@media only screen and (min-width: 660px) {
+  /* Style specifies to hide the mobile class */
+  .mobile {	
+    display: none;
+  }
+
+  /* Style specifies to display the desktop class */
+  .desktop {
+    display: inline;
+  }
+  /* Style specifies to display the tablet class */
+	.tablet {
+		display: block;
+		margin-top: -3em;
+		margin-bottom: -1em;
+	}
+
+	/* Style for table element */
+	table{
+		border: 0.1em solid #000000;
+		border-collapse: collapse; 
+		font-family: Verdana, Arial, sans-serif;
+		font-size: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		background-color: #FFFFFF;
+	}
+
+	/* Style for caption element */
+	caption{
+		font-size: 1.5em;
+		font-weight: bold;
+		background-color: #FFFFFF;
+		margin-top: -7px;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+	
+	/* Style specifies border and padding for th and td elements */
+	th,td {
+		border: 0.1em solid #000000;
+		padding: 1em;
+	}
+	
+	/* Style for th element */
+	th {
+		background-color: #3b3b37;
+		color: #FFFFFF;
+	}
+	
+	/* Style specifies a font weight and top margin for description list terms */
+	dt {
+		font-weight: bold;
+		margin-top: 0.7em;
+	}
+}
+
+/* Media query for desktop viewport targets screens with a minimum width of 980px. */
+
+@media only screen and (min-width: 980px) {
+
+  /* Style for table element */
+	table{
+		background-color: #FFFFFF;
+		/* border: 0.1em solid #000000;
+		border-collapse: collapse; 
+		font-family: Verdana, Arial, sans-serif;
+		font-size: 1em;
+		margin-left: auto;
+		margin-right: auto; */
+		width: 85%;
+	}
+	
+	/* Style for caption element */
+	caption{
+		color: #FFFFFF;
+		font-size: 1.5em;
+		font-weight: bold;
+		margin-top: -7px;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		background-color: #1D1D1C;
+	}
+
+	/* Style specifies border and padding for th and td elements */
+	th,td {
+		border: 0.1em solid #000000;
+		padding: 1em;
+	}
+	
+	/* Style for th element */
+	th {
+		background-color: #3b3b37;
+		color: #FFFFFF;
+	}
+
+}

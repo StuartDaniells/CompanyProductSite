@@ -1,0 +1,78 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   background-color: rgb(134, 125, 125);
+   color: #a1a1a1;
+   font-family: sans-serif;
+ }
+ 
+ .container {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .heading {
+   margin-bottom: 1.5rem;
+   font-size: 5rem;
+ }
+ 
+ .searchInputWrapper {
+   position: relative;
+ }
+ 
+ .searchInput {
+   width: 50rem;
+   height: 5rem;
+   padding: 0 1rem;
+   border-radius: 2rem;
+   border: none;
+   transition: transform 0.1s ease-in-out;
+ }
+ 
+ ::placeholder {
+   color: #a1a1a1;
+ }
+ 
+ /* hide the placeholder text on focus */
+ :focus::placeholder {
+   text-indent: -999px;
+ }
+ 
+ .searchInput:focus {
+   outline: none;
+   transform: scale(1.1);
+   transition: all 0.1s ease-in-out;
+ }
+ 
+ .searchInputIcon {
+   font-size: 3rem;
+   position: absolute;
+   right: 0.8rem;
+   top: 0.5rem;
+   color: #a1a1a1;
+   transition: all 0.1s ease-in-out;
+ }
+ 
+ .container:focus-within > .searchInputWrapper > .searchInputIcon {
+   right: 0.2rem;
+ }
+
+ h2{
+   color: black;
+   font-size: 5rem;
+   padding: 2rem;
+ }
+ p{
+   margin-top: 6px;
+   color: black;
+   font-size: 2.5rem;
+   padding: 2rem;
+ }
+ 

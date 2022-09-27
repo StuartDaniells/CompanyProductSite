@@ -1,0 +1,387 @@
+<!-- This website template was created by: Stuart Daniells - C0829441  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Unbeaten Inc.</title>
+   
+   <link rel="shortcut icon" href="res/images/favicon.ico">
+   
+   <!-- external style sheets -->
+
+   <!-- font awesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+   <!-- google fonts cdn -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Patua+One&display=swap" rel="stylesheet">
+
+   <!-- bootstrap cdn -->
+   <!-- For security have added in the integrity attribute -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+   integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" 
+   crossorigin="anonymous">
+
+   <!-- Main home page layout style sheet -->
+   <link rel="stylesheet" href="res/css/homepage_style.css">
+   
+   <!-- jquery cdn -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+   <!-- jquery easing cdn -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+   
+   <!-- external jquery script -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>	
+   
+   <script src="./scripts/blenders.js"></script>
+   <script src="./scripts/form_validator.js"></script>
+   <script src="./scripts/carousel.js"></script>
+
+</head>
+<body>
+   <!-- header start -->
+   <header id="header">
+      <nav>
+         <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="./html/training.html">Training</a></li>
+            <li><a href="./html/media.html">Media</a></li>
+            <li><a href="./html/contact.html">Contact</a></li>
+            
+            <!-- dropdown for Special, On sale - JSON product -->
+            <div class="dropdown" style="border-style: outset; border-color: #fff220;">
+               <button class="dropbtn">Products</button>
+               <div class="dropdown-content">
+                  <a href="#special">Specials</a></li>
+                  <a href="./html/products_from_json.html">On Sale</a>
+                  <a href="./html/flickr_search.html">Search Flickr</a>
+               </div>
+            </div>
+
+            <!-- Original Database reports for the Views created in SQL -->
+            <div class="dropdown">
+               <button class="dropbtn" style="border-style: outset; border-color: #fff220;">REPORTS</button>
+               <div class="dropdown-content">
+                 <a href="http://12.42.204.30:7447/html/report1.html" target="_blank">Products</a>
+                 <a href="http://12.42.204.30:7447/html/report2.html" target="_blank">Invoices</a>
+                 <a href="http://12.42.204.30:7447/html/report3.html" target="_blank">Customers</a>
+                 <a href="http://12.42.204.30:7447/html/report4.html" target="_blank">Staff</a>
+               </div>
+            </div>
+            <!-- End of Database reports -->
+         </ul>
+      </nav>
+
+      <!-- on smaller devices menu bars -->
+      <div class="fa-solid fa-bars"></div>
+
+      <!-- logo -->
+      <a href="#" class="logo"><img src="res/images/logos/logo.png" alt="logo of brand"></a>
+
+   </header>
+   <!-- header end -->
+
+   <!-- Home section starts -->
+   <section id="home" class="container-fluid">
+      <div class="row min-vh-100 align-items-center">
+         <div class="col-md-8 ml-md-5 text-md-left text-center content">
+             <h1>One stop</h1>
+             <h2>for all your</h2>
+             <h1>Blender needs</h1>
+             <a href="#special"><button>get started</button></a>
+         </div>
+         
+         <!-- video container -->
+         <div class="video-container">
+            <!-- without the attribute 'muted' in video tag, autoplay doesn't work in chrome -->
+            <!-- 1st video slide -->
+            <video autoplay muted loop class="vid vid1">
+               <source src="res/videos/home_page/vid1.mp4" type="video/mp4">
+               <source src="res/videos/home_page/vid1.ogg" type="video/ogg">
+               <source src="res/videos/home_page/vid1.webm" type="video/webm">
+               Your browser does not support the video tag.
+            </video>
+
+            <!-- 2nd video slide -->
+            <video autoplay muted loop class="vid vid2">
+               <source src="res/videos/home_page/vid2.mp4" type="video/mp4">
+               <source src="res/videos/home_page/vid2.ogg" type="video/ogg">
+               <source src="res/videos/home_page/vid2.webm" type="video/webm">
+               Your browser does not support the video tag.
+            </video>
+
+            <!-- 3rd video slide -->
+            <video autoplay muted loop class="vid vid3">
+               <source src="res/videos/home_page/vid3.mp4" type="video/mp4">
+               <source src="res/videos/home_page/vid3.ogg" type="video/ogg">
+               <source src="res/videos/home_page/vid3.webm" type="video/webm">
+               Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- slider video control using dots -->
+        <div class="controls">
+           <div class="dots dot1"></div>
+           <div class="dots dot2"></div>
+           <div class="dots dot3"></div>
+         </div>
+      </div>
+      
+   </section>
+   <!-- Home section ends -->
+   
+   <!-- about section starts  -->
+   <section id="about">
+      <div class="heading text-center">
+         <h1>Welcome to <span>Unbeaten Inc.</span></h1>
+      </div>
+     
+      <div class="row min-vh-50">
+         <div class="col-md-6 text-center text-md-left align-self-center content">
+            <p>Our products range from a variety of sizes, shapes and profiles. Each designed with the varying customer requirements as well as situations in mind. Users feedback and complaints are never turned a deaf year on by us. We've got an amazing support team dedicated to handling any queries or complaints.</p>
+
+            <p class="hideReveal">We believe seeing is believing and have put up almost every model on demo for our customers to test and see for themselves. During your visit please do feel free to ask us any of your queries and we will be happy to clarify them. Visit any of our stores here in British Columbia or anywhere else in Canada for that matter and see for your selves why we are currently unbeaten in this marketspace.</p>
+            <a href="#" class="aboutReveal clickToggle">Show more</a>
+         </br>
+            <a href="./html/about_us.html"><button>learn more</button></a>
+         </div>
+
+         <div class="col-md-6 image">
+            <img src="res/images/bg-venue.jpg" alt="">
+         </div>
+      </div>
+   </section>
+   <!-- about section ends  -->
+
+   <!-- special card section starts  -->
+   <section id="special" class="container-fluid">
+      <div class="heading text-center">
+         <h1>our <span>specials</span></h1>
+         <p>Our Specially Curated List Of Products.</p>
+      </div>
+
+      <!-- special blender cards carousel start -->
+      <div class="card-container">
+         <div class="image_list">
+            <div class="card">
+               <img src="res/images/blenderMain.jpg" alt="">
+               <p>Hamilton Beach Professional 58850</p>
+               <a href="./html/specials.html"><button>read more</button></a>
+            </div>
+         
+            <div class="card">
+               <img src="res/images/blender1.jpg" alt="">
+               <p>Black+Decker Digital PowerCrush BL1300DG-P</p>
+               <a href="./html/specials.html"><button>read more</button></a>
+            </div>
+         
+            <div class="card">
+               <img src="res/images/blender3.jpg" alt="">
+               <p>Ninja Performance BL-710WM</p>
+               <a href="./html/specials.html"><button>read more</button></a>
+            </div>
+
+            <div class="card">
+               <img src="res/images/blenderMain.jpg" alt="">
+               <p>Hamilton Beach Professional 58850</p>
+               <a href="./html/specials.html"><button>read more</button></a>
+            </div>
+         
+            <div class="card">
+               <img src="res/images/blender1.jpg" alt="">
+               <p>Black+Decker Digital PowerCrush BL1300DG-P</p>
+               <a href="./html/specials.html"><button>read more</button></a>
+            </div>
+
+            <div class="card">
+               <img src="res/images/blenderMain.jpg" alt="">
+               <p>Hamilton Beach Professional 58850</p>
+               <a href="./html/specials.html"><button>read more</button></a>
+            </div>
+
+            <div class="card">
+               <img src="res/images/blender1.jpg" alt="">
+               <p>Black+Decker Digital PowerCrush BL1300DG-P</p>
+               <a href="./html/specials.html"><button>read more</button></a>
+            </div>
+         
+            <div class="card">
+               <img src="res/images/blender3.jpg" alt="">
+               <p>Ninja Performance BL-710WM</p>
+               <a href="./html/specials.html"><button>read more</button></a>
+            </div>
+         </div>
+      </div>
+      <div class="button_panel">
+         <button class="button_arrows" id="left_button" style="margin-right: 20px;"><strong><</strong></button>
+         <button class="button_arrows" id="right_button" style="margin-left: 20px;"><strong>></strong></button>
+      </div>
+
+      <!-- special blender cards carousel end -->
+   </section>
+   <!-- special card section ends  -->
+
+
+   <!-- team section starts  -->
+   <section id="team" class="container">
+
+      <div class="heading text-center">
+          <h1>our <span>Team</span></h1>
+      </div>
+  
+      <div class="box-container">
+  
+         <div class="box">
+            <img src="./res/images/team_mem/Amanda_wallice.jpg" alt="ceo image">
+            <div class="info">
+               <h3>CEO</h3>
+               <p>Amanda wallice</p>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="./res/images/team_mem/Jennifer_paterson.jpg" alt="cfo image">
+            <div class="info">
+               <h3>CFO</h3>
+               <p>Jennifer paterson</p>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="./res/images/team_mem/Robert_brown.jpg" alt="director image"/>
+            <div class="info">
+               <h3>Director</h3>
+               <p>Robert brown</p>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="./res/images/team_mem/saeed_naqvi.jpg" alt="lead trainer image">
+            <div class="info">
+               <h3>Lead Trainer</h3>
+               <p>saeed naqvi</p>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="./res/images/team_mem/sadaf_hussain.jpg" alt="Lead Designer image">
+            <div class="info">
+               <h3>Lead Designer</h3>
+               <p>sadaf hussain</p>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="./res/images/team_mem/Abigail_white.jpg" alt="Marketing head">
+            <div class="info">
+               <h3>Marketing head</h3>
+               <p>Abigail white</p>
+            </div>
+         </div>
+
+      </div>
+  
+   </section>
+   <!-- team section ends  -->
+
+   <!-- newsletter subscription section starts  -->
+
+   <section id="contact" class="container-fluid">
+
+         <div class="heading text-center">
+            <h1><span>newsletter</span> subscription</h1>
+         </div>
+
+         <div class="row justify-content-center">
+
+            <form id="contact_us_form" name="contact" class="col-md-7" action="./html/response.html" method="get">
+
+               <div class="inputBox">
+                  <input type="text" name="name" required>
+                  <h3>full name</h3>
+               </div>
+
+               <div class="inputBox">
+                  <input class="emailType" type="email" name="email" required>
+                  <h3>e-mail</h3>
+               </div>
+
+               <div class="inputBox">
+                  <textarea name="" id="" cols="30" rows="10" required></textarea>
+                  <h3>message</h3>
+               </div>
+
+               <input type="submit" value="send">
+            </form>
+         </div>
+         
+   </section>
+   <!-- newsletter subscription section ends  -->
+
+   <!-- footer section starts  -->
+
+   <footer id="footer" class="container-fluid">
+
+      <div class="row align-items-center">
+         <div class="col-md-4 brand">
+            <a href="#" class="logo">
+               <img src="res/images/logos/logo.png" alt="logo">
+               <p>Not just our name but our motto!</p>
+            </a>
+            
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-square"></a>
+               <a href="#" class="fab fa-twitter-square"></a>
+               <a href="#" class="fab fa-instagram-square"></a>
+               <a href="#" class="fab fa-pinterest-square"></a>
+            </div>
+            
+            </div>
+               <div class="col-md-4 footer-links">
+               <h3>links:</h3>
+               <a href="#home">home</a>
+               <a href="#special">special</a>
+               <a href="#about">about</a>
+               <a href="#team">team</a>
+               <a href="#contact">contact</a>
+               </div>
+               
+               <div class="col-md-4 text-center text-md-left letter">
+                  <h2>newsletter:</h2>
+                  <input type="text"><br>
+                  <input type="submit" value="subscribe">
+               </div>
+         </div>
+         <hr style="background-color: #fff;">
+
+         <!-- Footer copyrights -->
+         <h1>&copy; Copyright 2099. All Rights Reserved.
+            &nbsp;|&nbsp; <u><a href="mailto:support@unbeaten.com"> Request information. </a></u>
+            &nbsp;|&nbsp; <span> Stuart Daniells &nbsp; - &nbsp; C0829441</span></p>
+         </h1>
+      </footer>
+
+   <!-- footer section ends  -->
+
+   <!-- jquery menu plugin -->
+   <script src="./scripts/jquery.hoverEffect.js"></script>
+
+   <script>
+      $(document).ready(function() {
+         $("#header ul").hoverEffectMenu({
+            bgColor: 'transparent',
+            color: '#fff',
+            hoverColor: 'yellow',
+            textShadow: ''
+         });
+      });
+   </script>
+</body>
+</html>
